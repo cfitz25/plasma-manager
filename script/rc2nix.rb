@@ -54,6 +54,11 @@ module Rc2Nix
     "ffmpegthumbsrc",
     "kservicemenurc",
     "kiorc",
+
+    # Panel Files
+    "plasma-org.kde.plasma.desktop-appletsrc",
+    "plasmashellrc"
+
   ].map {|f| File.expand_path(f, XDG_CONFIG_HOME)}.freeze
 
   ##############################################################################
@@ -72,8 +77,7 @@ module Rc2Nix
       /^Colors:/,
       /^DoNotDisturb$/,
       /^LegacySession:/,
-      /^MainWindow$/,
-      /^PlasmaViews/,
+
       /^ScreenConnectors$/,
       /^Session:/,
     ]
@@ -90,6 +94,8 @@ module Rc2Nix
       /^Version$/,
       /State$/,
       /Timestamp$/,
+
+      /^immutability/
     ]
 
     ############################################################################
