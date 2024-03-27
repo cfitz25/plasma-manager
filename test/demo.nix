@@ -54,7 +54,8 @@
 
     home-manager.users.fake = {
       home.stateVersion = "22.05";
-       imports = [ plasma-module ];
+      imports = [ plasma-module ];
+      
     };
   };
 }

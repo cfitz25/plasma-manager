@@ -81,6 +81,7 @@ let
     "plasmarc"
     "plasmashellrc"
     "systemsettingsrc"
+    "plasma-org.kde.plasma.desktop-appletsrc"
   ];
 
   # Creates command to remove file iff the file is present
